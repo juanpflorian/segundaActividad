@@ -1,0 +1,29 @@
+<header>
+     <h1><img src="../public/images/consulta.png" alt="" width="30">Agendar Citas Medicas <img src="../public/images/consulta.png" alt="" width="30"></h1>
+    <p>Bienvenidos a nuestro portal de Registro de Médicos, una herramienta esencial para gestionar y mantener un registro completo y actualizado de profesionales de la salud. En nuestro compromiso por ofrecer soluciones eficientes en el ámbito médico, esta plataforma está diseñada para facilitar la incorporación y administración de médicos en su institución de salud.</p><br>
+    
+</header>
+<main>
+    <h2>Agendamiento de citas</h2>
+    <div class="container-form">
+        <form method="post" action="/agregar-cita">
+            <label for="cedula">Número de cedula:</label>
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="fecha_cita">Fecha de cita medica:</label>
+            <input type="date" id="fecha_cita" name="fecha_cita" required>
+            <label for="medico">Medico especialista:</label>
+            <select name="medico" id="medico" required>
+                <option value="">----------Seleccione una opcion-----------</option>
+                {{#each resultado}}
+                    <option value="{{cedula}}">{{nombres}} {{apellidos}}</option>
+                {{/each}}
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="../index.html"><input type="button" value="Volver"></a>
+    </div>
+</main>
+<footer>
+    <h2>Realizado por:</h2>
+   &copy; MIN-SALUD 2023
+</footer>

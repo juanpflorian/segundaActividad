@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro_medicos.css">
+    <title>REGISTRAR MEDICOS </title>
+</head>
+<body>
+    <h1><img src="../public/images/registro de medicos.png" alt="" width="30">REGISTRAR MEDICOS <img src="../public/images/registro de medicos.png" alt="" width="30"></h1>
+    <p>Bienvenidos a nuestro portal de Registro de Médicos, una herramienta esencial para gestionar y mantener un registro completo y actualizado de profesionales de la salud. En nuestro compromiso por ofrecer soluciones eficientes en el ámbito médico, esta plataforma está diseñada para facilitar la incorporación y administración de médicos en su institución de salud.</p><br>
+    
+    <form method="post" action="/agregar-medico">
+        <label for="NOMBRES">Nombre</label>
+        <input type="text" name="nombres" id="nombres" required>
+        <br>
+        <label for="APELLIDOS">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br>
+        <label for="CEDULA">Cedula</label>
+        <input type="text" name="cedula" id="cedula">
+        <br>
+        <label for="N.Consultorio">Numero de Consultorio</label>
+        <input type="number" name="consultorio" id="consultorio">
+        <br>
+        <label for="TELEFONO">Telefono</label>
+        <input type="number" name="telefono" id="telefono">
+        <br>
+        <label for="CORREO">Correo Electronico</label>
+        <input type="email" name="correo" id="correo">
+        <br>
+        <label for="ESPECIALIDAD">Especialidad</label>
+        <select name="especialidad" id="especialidad">
+            <option value=""></option>
+            <option value="Medicina General">Medicina General</option>
+            <option value="Medicina General">Cardiologia</option>
+            <option value="Medicina General">medicina interna</option>
+            <option value="Medicina General">Dermatologia</option>
+            <option value="Medicina General">Rehabilitacion fisica</option>
+            <option value="Medicina General">Psicologia</option>
+            <option value="Medicina General">Odontologia</option>
+            <option value="Medicina General">Radiologia</option>
+        </select>
+        <br>
+        <input type="submit" value="ENVIAR">
+    </form>
+    <div class="boton-container">
+        <a  href="index.html"> <input type="button" value="volver"></a></div><br><br>
+    </div>
+    <script src="app.js"></script>    
+</body>
+
+<footer>
+    &copy; MIN-SALUD 2023
+</footer>
+</html>

@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="css/listado_medicos.css">
+    <title>lISTADO DE PACIENTES</title>
+</head>
+<body>
+    <h1><img src="images/pacientes.png" alt="" width="30">LISTADO DE PACIENTES<img src="images/pacientes.png"  alt="" width="30"></h1>
+    <p>Bienvenido al perfil del paciente en nuestra plataforma médica en línea. Aquí, ponemos a tu disposición una vista detallada de la información básica de nuestros pacientes. Nuestra misión es proporcionarte un acceso rápido y seguro a los datos esenciales de cada paciente, lo que te permitirá brindar un mejor cuidado médico y mantener registros actualizados.</p>
+    <br>
+    <main class="tabla-container">
+        <table border="solid" id="tabla-pacientes"> 
+           <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDOS</th>
+                <th>CEDULA</th>
+                <th>FECHA DE NACIMIENTO</th>
+                <th>TELEFONO</th>
+            </tr>
+           </thead>
+         <tbody >
+                {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{formatofecha fecha_nacimiento}}</td>
+                <td>{{telefono}}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+            
+        </table>
+        <div class="boton-container">
+            <a class="btn-devolver" href="index.html">Devolver</a><br><br><br><br>
+        </div>
+    </main>
+</body>
+<footer>
+    &copy; MIN-SALUD 2023
+</footer>

@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="css/listado_medicos.css">
+    <title>LISTADO DE MEDICOS</title>
+</head>
+<body>
+    <h1><img src="images/medicos.png" alt="" width="25">LISTADO DE MEDICOS<img src="images/medicos.png" alt="" width="25"></h1>
+    <p>Bienvenidos a nuestra página web de "Listado de Médicos". Aquí encontrarás una detallada lista de profesionales de la salud que prestan sus servicios en nuestra institución médica. Nuestro compromiso es brindarte acceso rápido y sencillo a la información básica de nuestros médicos para que puedas tomar decisiones informadas sobre tu atención médica.</p>
+    <br>
+    <main class="tabla-container">
+        <table border="solid" id="tabla-medicos"> 
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDOS</th>
+                <th>CEDULA</th>
+                <th>N. Consltorio</th>
+                <th>TELEFONO</th>
+                <th>CORREO</th>
+                <th>ESPECIALIDAD</th>
+            </tr>
+            <tbody >
+                {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{telefono}}</td>
+                <td>{{correo}}</td>
+                <td>{{especialidad}}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        <div class="boton-container">
+            <a class="btn-devolver" href="index.html">Devolver</a><br><br><br><br>
+        </div>
+        
+    </main>
+    <script src="app.js"></script>    
+</body>
+<footer>

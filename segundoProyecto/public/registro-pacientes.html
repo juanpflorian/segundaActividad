@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="css/registro_pacientes.css">
+    <title>REGISTRAR PACIENTES  </title>
+</head>
+<body>
+    <h1><img src="../public/images/registro de paciente.png" alt="" width="30">REGISTRAR PACIENTES <img src="../public/images/registro de paciente.png" alt="" width="30"></h1>
+    <p>Bienvenidos a nuestro portal de Registro de Pacientes, una herramienta fundamental para gestionar y mantener un registro completo y actualizado de los pacientes que atiende su institución médica. Nuestra plataforma está diseñada pensando en la eficiencia y la seguridad de los datos médicos.</p>
+   <main>
+    <form method="post" action="/agregar-paciente">
+        <label for="Nombres">Nombre</label>
+        <input type="text" name="nombres" id="nombres">
+        <br>
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br>
+        <label for="Cedula">Cedula</label>
+        <input type="text" name="cedula" id="cedula">
+        <br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+        <br>
+        <label for="Telefono">Telefono</label>
+        <input type="number" name="telefono" id="telefono">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="boton-container">
+        <a class="btn-devolver" href="index.html">Devolver</a><br><br>
+    </div>
+   </main>
+   <script src="app.js"></script>  
+</body>
+<footer>
+    &copy; MIN-SALUD 2023
+</footer>
+</html>
